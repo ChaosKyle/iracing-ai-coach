@@ -10,6 +10,58 @@
 | **Version Control** | DVC (Data Version Control), Git | Track setup iterations and telemetry correlations |
 | **CI/CD** | GitHub Actions, n8n | Automate setup testing/deployment |
 
+# iRacing AI Coach Project - Phase Plan
+
+## 🌱 **Phase 1: Telemetry Visualization (MVP)**
+**Goal**: Local Grafana dashboards for post-session analysis  
+**Tools**: Docker, Grafana LGTM, Alloy, Python  
+**Deliverables**:
+- [x] Bash setup script (`setup.sh`)
+- [x] Docker Compose stack (Grafana/Loki/Mimir/Alloy)
+- [x] Python telemetry collector (`telemetry_collector.py`)
+- [x] Basic dashboards (speed, throttle/brake, tire temps)
+- [x] README.md + Repo skeleton
+- [ ] Blog Post #1: "Setting Up Telemetry"
+
+---
+
+## 🔄 **Phase 2: Automation & Setup Prototyping**
+**Goal**: Rule-based setup adjustments + validation  
+**Tools**: n8n, DVC, Optuna  
+**Deliverables**:
+- [ ] n8n workflows (e.g., "Alert on tire temp thresholds")
+- [ ] Setup version control with DVC
+- [ ] YAML-based setup templates (`setups/` directory)
+- [ ] Blog Post #2: "From Data to Setup Tweaks"
+
+---
+
+## 🤖 **Phase 3: AI Coaching (Proof of Concept)**
+**Goal**: ML-driven insights and predictions  
+**Tools**: Scikit-learn/TensorFlow, Grafana ML plugin  
+**Deliverables**:
+- [ ] Lap time prediction model
+- [ ] "Virtual Engineer" dashboard (Grafana)
+- [ ] Automated setup optimization script
+- [ ] Blog Post #3: "Training Your AI Teammate"
+
+---
+
+## 🚀 **Phase 4: SaaS Prep & Community**
+**Goal**: Transition to monetizable service  
+**Tools**: FastAPI, Stripe, Auth0  
+**Deliverables**:
+- [ ] User auth system (free vs. paid tiers)
+- [ ] Setup marketplace prototype
+- [ ] Community contribution guidelines
+- [ ] Blog Post #4: "Scaling to SaaS"
+
+---
+
+## 🔗 **Key Resources**
+1. [Setup Script](https://github.com/your-username/iracing-ai-coach/blob/main/setup.sh)
+2. [Phase 1 Architecture Diagram](docs/phase1-arch.png)
+3. [Blog Post Template](docs/blog/phase1.md)
 
 
 # 🏎️ iRacing AI Coach
